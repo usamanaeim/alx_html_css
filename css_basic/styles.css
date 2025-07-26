@@ -1,0 +1,34 @@
+/* Flexbox positioning for layout */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1em;
+  border-right: 1px solid #ccc;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+header,
+footer {
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
