@@ -1,34 +1,70 @@
-/* Flexbox positioning for layout */
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-family: sans-serif;
+/* Logo styling */
+.logo {
+  font-size: 2em;
+  margin-right: 10px;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex: auto;
-}
-
-article {
-  flex: 2;
-  overflow-y: auto;
+/* Header customization */
+header {
+  background-color: #bebebe;
+  color: white;
   padding: 1em;
-  border-right: 1px solid #ccc;
+  border-bottom: 3px solid #bebebe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-aside {
-  flex: 1;
-  overflow-y: auto;
-  padding: 1em;
+/* Wrapper for logo + title (optional) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-header,
+/* Footer customization */
 footer {
+  background-color: #004080;
+  color: white;
   padding: 1em;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-top: 3px solid #003060;
+}
+
+/* Article styling */
+article {
+  background-color: #fefefe;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+/* Aside styling */
+aside {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+/* Navigation list */
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional: Headings font style */
+h1, h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
