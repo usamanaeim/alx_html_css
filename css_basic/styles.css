@@ -24,11 +24,11 @@ header {
 
 /* Footer customization */
 footer {
-  background-color: #004080;
+  background-color: #bebebe;
   color: white;
   padding: 1em;
   margin-top: 20px;
-  border-top: 3px solid #003060;
+  border-top: 3px solid #bebebe;
 }
 
 /* Article styling */
