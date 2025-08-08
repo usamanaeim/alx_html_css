@@ -1,138 +1,376 @@
+/* Reset and Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-  height: 100%; 
-}
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('images/Object.png'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment:scroll; 
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
 }
 
-
-
-
-
-
-
+/* Header */
 header {
-    justify-content: space-between;
-    padding: 10px 0;
-    text-align: center;
-    nav {
-        display: flex;
-        justify-content:space-between;
-        gap: 20px;
-        ul  {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-              }
-
-        }
-    }
-
-  header a {
-    text-decoration: none;
-    height: 60px;
-  }  
-  
-  h1 {
-    font-size: 120px;
-  }
-
-  .landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 60px); /* Adjust height to fill the viewport minus header */;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 150px; /* Add margin to the bottom */
-  }
-.landing button {
-  display: block;
+  background: transparent;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
-.main-button {
-  display: block;
-  margin: 60px auto 100px;
-  width: 162px;
-  height: 44px;
+header img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Banner Section */
+main > section:first-child {
+  background: url("./images/Object.png") no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 20px;
+}
+
+main section:first-child h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section:first-child span {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main section:first-child button {
   background-color: #C271FF;
-  color: #FFFFFF;
-  padding: 10px 10px;
   border: none;
-  border-radius: 10px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-top: 30px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
+/* Learn from the pros */
+main section:nth-child(1) > div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+main section:nth-child(1) h2 {
+  color: #C271FF;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
 
+main section:nth-child(1) > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
+main section:nth-child(1) > div:nth-child(2) > div > div {
+  text-align: center;
+  max-width: 150px;
+}
 
+main section:nth-child(1) > div:nth-child(2) > div img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
 
+main section:nth-child(1) > div:nth-child(2) > div h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
 
+main section:nth-child(1) > div:nth-child(2) > div p {
+  font-size: 12px;
+  color: white;
+  opacity: 0.8;
+}
 
+/* Quote Section */
+main section:nth-child(2) {
+  background-color: #C271FF;
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+  color: white;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+main section:nth-child(2) img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-.text-c {
+main section:nth-child(2) blockquote {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+main section:nth-child(2) h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+main section:nth-child(2) p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Video Section */
+main section:nth-child(3) {
+  padding: 80px 20px;
   text-align: center;
 }
 
-
-.color-w {
-color: #FFFFFF;
+main section:nth-child(3) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
-.d-flex {
+main section:nth-child(3) > div {
   display: flex;
-}
-
-.justify-c {
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.d-flex span {
-    margin: 0 30px; 
+main section:nth-child(3) > div > div {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 15px;
+  text-align: left;
 }
 
-
-.margin-a  {
-  margin: auto;
-}
-.margin-50 {
-  margin: 50px auto;
+main section:nth-child(3) > div img:first-child {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
 }
 
-.border-r-c {
+main section:nth-child(3) h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main section:nth-child(3) p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+main section:nth-child(3) > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main section:nth-child(3) > div > div > div img {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
-.gap-2 {
+main section:nth-child(3) > div > div > div h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main section:nth-child(3) .fa-star {
+  color: #C271FF;
+}
+
+main section:nth-child(3) > div > div > p:last-of-type {
+  font-size: 12px;
+  text-align: right;
+  color: #888;
+}
+
+/* Membership Section */
+main section:nth-child(4) {
+  background-color: #071629;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-child(4) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+main section:nth-child(4) > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-child(4) > div > div {
+  max-width: 200px;
+}
+
+main section:nth-child(4) img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+main section:nth-child(4) h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main section:nth-child(4) p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
+
+main section:nth-child(4) button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* FAQ Section */
+main section:nth-child(5) {
+  padding: 80px 20px;
+  background-color: #fff;
+  color: #071629;
+  text-align: center;
+}
+
+main section:nth-child(5) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+main section:nth-child(5) > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+main section:nth-child(5) > div > div {
+  max-width: 400px;
+  text-align: left;
+}
+
+main section:nth-child(5) h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+main section:nth-child(5) p,
+main section:nth-child(5) div div {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #071629;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
-.w-150 {
-  width: 150px;
+footer section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.flex-1 {
-  flex: 1;
+footer img {
+  height: 40px;
 }
 
+footer i {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
 
+footer i:hover {
+  color: #C271FF;
+}
 
-
-
-.flex-col {
-  flex-direction: column;
+footer p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
 }
