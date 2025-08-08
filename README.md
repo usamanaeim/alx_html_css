@@ -18,7 +18,7 @@ This is a fully responsive, accessible webpage built from scratch using only HTM
 - CSS3
 - Figma (for design inspection)
 
-## 🖼 Design
+##  Design
 The design was created by Nicolas Philippot, UI/UX designer.
 
 [Figma file](https://savanna.alxafrica.com/rltoken/LLIeb837T4Ul-rRPZve39w)
@@ -27,6 +27,7 @@ The design was created by Nicolas Philippot, UI/UX designer.
 - Desktop and mobile views
 - Max width: 1000px centered
 - Mobile breakpoint: 480px
+
 
 
 
